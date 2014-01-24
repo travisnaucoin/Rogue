@@ -1,0 +1,376 @@
+# depslib dependency file v1.0
+1390553011 source:c:\users\indy\documents\serff\wrogue\main.cpp
+	"main.hpp"
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\libtcod.hpp
+	"libtcod.h"
+	"list.hpp"
+	"color.hpp"
+	"console.hpp"
+	"image.hpp"
+	"sys.hpp"
+	"mersenne.hpp"
+	"mouse.hpp"
+	"bresenham.hpp"
+	"noise.hpp"
+	"fov.hpp"
+	"path.hpp"
+	"lex.hpp"
+	"parser.hpp"
+	"tree.hpp"
+	"bsp.hpp"
+	"heightmap.hpp"
+	"zip.hpp"
+	"namegen.hpp"
+	"txtfield.hpp"
+
+1346289056 c:\users\indy\desktop\libtcod-1.5.1\include\libtcod.h
+	<wchar.h>
+	"SDL/SDL.h"
+	"list.h"
+	"color.h"
+	"console.h"
+	"image.h"
+	"mouse.h"
+	"sys.h"
+	"mersenne.h"
+	"bresenham.h"
+	"noise.h"
+	"fov.h"
+	"path.h"
+	"lex.h"
+	"parser.h"
+	"tree.h"
+	"bsp.h"
+	"heightmap.h"
+	"zip.h"
+	"namegen.h"
+	"txtfield.h"
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\list.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\color.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\console.h
+	"console_types.h"
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\console_types.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\image.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\mouse.h
+	"mouse_types.h"
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\mouse_types.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\sys.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\mersenne.h
+	"mersenne_types.h"
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\mersenne_types.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\bresenham.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\noise.h
+	"noise_defaults.h"
+
+1317865708 c:\users\indy\desktop\libtcod-1.5.1\include\noise_defaults.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\fov.h
+	"fov_types.h"
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\fov_types.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\path.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\lex.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\parser.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\tree.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\bsp.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\heightmap.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\zip.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\namegen.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\txtfield.h
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\list.hpp
+	<string.h>
+	<stdlib.h>
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\color.hpp
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\console.hpp
+	"console_types.h"
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\image.hpp
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\sys.hpp
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\mersenne.hpp
+	"mersenne_types.h"
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\mouse.hpp
+	"mouse_types.h"
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\bresenham.hpp
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\noise.hpp
+	"noise_defaults.h"
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\fov.hpp
+	"fov_types.h"
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\path.hpp
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\lex.hpp
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\parser.hpp
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\tree.hpp
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\bsp.hpp
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\heightmap.hpp
+
+1346288878 c:\users\indy\desktop\libtcod-1.5.1\include\zip.hpp
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\namegen.hpp
+
+1346288884 c:\users\indy\desktop\libtcod-1.5.1\include\txtfield.hpp
+	"color.hpp"
+
+1390511081 c:\users\indy\documents\serff\wrogue\main.hpp
+	"libtcod.hpp"
+	"Persistent.hpp"
+	"Destructible.hpp"
+	"Attacker.hpp"
+	"Ai.hpp"
+	"Pickable.hpp"
+	"Container.hpp"
+	"Actor.hpp"
+	"Map.hpp"
+	"Gui.h"
+	"Engine.hpp"
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\libtcod.hpp
+	"libtcod.h"
+	"list.hpp"
+	"color.hpp"
+	"console.hpp"
+	"image.hpp"
+	"sys.hpp"
+	"mersenne.hpp"
+	"mouse.hpp"
+	"bresenham.hpp"
+	"noise.hpp"
+	"fov.hpp"
+	"path.hpp"
+	"lex.hpp"
+	"parser.hpp"
+	"tree.hpp"
+	"bsp.hpp"
+	"heightmap.hpp"
+	"zip.hpp"
+	"namegen.hpp"
+	"txtfield.hpp"
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\libtcod.h
+	<wchar.h>
+	"SDL/SDL.h"
+	"list.h"
+	"color.h"
+	"console.h"
+	"image.h"
+	"mouse.h"
+	"sys.h"
+	"mersenne.h"
+	"bresenham.h"
+	"noise.h"
+	"fov.h"
+	"path.h"
+	"lex.h"
+	"parser.h"
+	"tree.h"
+	"bsp.h"
+	"heightmap.h"
+	"zip.h"
+	"namegen.h"
+	"txtfield.h"
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\list.h
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\color.h
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\console.h
+	"console_types.h"
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\console_types.h
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\image.h
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\mouse.h
+	"mouse_types.h"
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\mouse_types.h
+
+1390338827 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\sys.h
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\mersenne.h
+	"mersenne_types.h"
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\mersenne_types.h
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\bresenham.h
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\noise.h
+	"noise_defaults.h"
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\noise_defaults.h
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\fov.h
+	"fov_types.h"
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\fov_types.h
+
+1390338827 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\path.h
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\lex.h
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\parser.h
+
+1390338827 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\tree.h
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\bsp.h
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\heightmap.h
+
+1390338827 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\zip.h
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\namegen.h
+
+1390338827 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\txtfield.h
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\list.hpp
+	<string.h>
+	<stdlib.h>
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\color.hpp
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\console.hpp
+	"console_types.h"
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\image.hpp
+
+1390338827 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\sys.hpp
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\mersenne.hpp
+	"mersenne_types.h"
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\mouse.hpp
+	"mouse_types.h"
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\bresenham.hpp
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\noise.hpp
+	"noise_defaults.h"
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\fov.hpp
+	"fov_types.h"
+
+1390338827 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\path.hpp
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\lex.hpp
+
+1390338827 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\parser.hpp
+
+1390338827 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\tree.hpp
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\bsp.hpp
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\heightmap.hpp
+
+1390338827 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\zip.hpp
+
+1390338826 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\namegen.hpp
+
+1390338827 c:\users\indy\documents\serff\libtcod-1.5.2-gcc47\include\txtfield.hpp
+	"color.hpp"
+
+1390513013 c:\users\indy\documents\serff\wrogue\destructible.hpp
+
+1390511481 c:\users\indy\documents\serff\wrogue\attacker.hpp
+
+1390511871 c:\users\indy\documents\serff\wrogue\ai.hpp
+
+1390511436 c:\users\indy\documents\serff\wrogue\actor.hpp
+
+1390580248 c:\users\indy\documents\serff\wrogue\map.hpp
+
+1390530264 c:\users\indy\documents\serff\wrogue\engine.hpp
+
+1390440803 source:c:\users\indy\documents\serff\wrogue\actor.cpp
+	"main.hpp"
+	<math.h>
+
+1390453558 source:c:\users\indy\documents\serff\wrogue\ai.cpp
+	<stdio.h>
+	<math.h>
+	"main.hpp"
+
+1390410131 source:c:\users\indy\documents\serff\wrogue\attacker.cpp
+	<stdio.h>
+	"main.hpp"
+
+1390512219 source:c:\users\indy\documents\serff\wrogue\destructible.cpp
+	<stdio.h>
+	"main.hpp"
+
+1390552907 source:c:\users\indy\documents\serff\wrogue\engine.cpp
+	"main.hpp"
+
+1390603233 source:c:\users\indy\documents\serff\wrogue\map.cpp
+	"main.hpp"
+	<stdio.h>
+
+1390408928 c:\users\indy\documents\serff\wrogue\include\gui.h
+
+1390532458 c:\users\indy\documents\serff\wrogue\gui.h
+
+1390552952 source:c:\users\indy\documents\serff\wrogue\gui.cpp
+	<stdio.h>
+	<stdarg.h>
+	"main.hpp"
+
+1390512907 c:\users\indy\documents\serff\wrogue\pickable.hpp
+
+1390511522 c:\users\indy\documents\serff\wrogue\container.hpp
+
+1390419493 source:c:\users\indy\documents\serff\wrogue\container.cpp
+	"main.hpp"
+
+1390521297 source:c:\users\indy\documents\serff\wrogue\pickable.cpp
+	"main.hpp"
+
+1390441388 source:c:\users\indy\documents\serff\wrogue\lightningbolt.cpp
+	"LightningBolt.hpp"
+
+1390441353 c:\users\indy\documents\serff\wrogue\lightningbolt.hpp
+
+1390451005 source:c:\users\indy\documents\serff\wrogue\spelleffects.cpp
+	"SpellEffects.hpp"
+
+1390448408 c:\users\indy\documents\serff\wrogue\spelleffects.hpp
+	"libtcod.hpp"
+
+1390511032 c:\users\indy\documents\serff\wrogue\persistent.hpp
+
+1390549971 source:c:\users\indy\documents\serff\wrogue\persistent.cpp
+	"main.hpp"
+
