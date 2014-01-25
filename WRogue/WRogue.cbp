@@ -31,6 +31,8 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add option="-static-libgcc" />
+					<Add option="-static-libstdc++" />
 					<Add library="..\..\..\..\Desktop\libtcod-1.5.2-gcc47\lib\libtcod-mingw.a" />
 					<Add library="..\..\..\..\..\..\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\lib\fmod.a" />
 				</Linker>
