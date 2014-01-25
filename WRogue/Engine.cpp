@@ -1,15 +1,16 @@
 #include "main.hpp"
+#include "stdio.h"
 
 Engine::Engine(int screenWidth, int screenHeight) : gameStatus(STARTUP),
-	player(NULL),map(NULL),fovRadius(10),
+	player(NULL),map(NULL), fovRadius(10),
 	screenWidth(screenWidth),screenHeight(screenHeight), level(1) {
     TCODSystem::setFps(70);
     TCODConsole::setCustomFont("terminal2.png",TCOD_FONT_LAYOUT_ASCII_INROW);
-
     gui = new Gui();
 }
 
 void Engine::init() {
+
     TCODConsole::initRoot(screenWidth,screenHeight,"0xD153A53",false);
     TCODConsole::root->setDefaultBackground(TCODColor::black);
     player = new Actor(40,25,'@',"player",TCODColor::white);
@@ -180,4 +181,3 @@ void Engine::nextLevel() {
     map->init(true);
     gameStatus=STARTUP;
 }
-

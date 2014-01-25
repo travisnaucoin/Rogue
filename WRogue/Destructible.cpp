@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "main.hpp"
 
-Destructible::Destructible(float maxHp, float maxMana, float maxFood, float defense, const char *corpseName) :
-	maxHp(maxHp),hp(maxHp), maxMana(maxMana), mana(maxMana), maxFood(maxFood), food(maxFood), defense(defense){
+Destructible::Destructible(float maxHp, float maxMana, float maxFood, float defense, const char *corpseName, int xp) :
+	maxHp(maxHp),hp(maxHp), maxMana(maxMana), mana(maxMana), maxFood(maxFood), food(maxFood), defense(defense), xp(xp) {
 	    this->corpseName = strdup(corpseName);
 }
 
@@ -42,19 +42,20 @@ void Destructible::die(Actor *owner) {
 	engine.sendToBack(owner);
 }
 
-MonsterDestructible::MonsterDestructible(float maxHp, float defense, const char *corpseName) :
-	Destructible(maxHp,maxMana,maxFood,defense,corpseName) {
+MonsterDestructible::MonsterDestructible(float maxHp, float defense, const char *corpseName, int xp) :
+	Destructible(maxHp,maxMana,maxFood,defense,corpseName,xp) {
 }
 
 void MonsterDestructible::die(Actor *owner) {
 	// transform it into a nasty corpse! it doesn't block, can't be
 	// attacked and doesn't move
-	engine.gui->message(TCODColor::lightGrey,"%s is dead",owner->name);
+	engine.gui->message(TCODColor::lightGrey,"%s is dead. You gain %d XP",owner->name,xp);
+	engine.player->destructible->xp += xp;
 	Destructible::die(owner);
 }
 
 PlayerDestructible::PlayerDestructible(float maxHp, float maxMana, float maxFood, float defense, const char *corpseName) :
-	Destructible(maxHp,maxMana,maxFood,defense,corpseName) {
+	Destructible(maxHp,maxMana,maxFood,defense,corpseName,xp) {
 }
 
 void PlayerDestructible::die(Actor *owner) {

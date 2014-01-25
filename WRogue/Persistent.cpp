@@ -113,7 +113,7 @@ Destructible *Destructible::create(TCODZip &zip) {
 	DestructibleType type=(DestructibleType)zip.getInt();
 	Destructible *destructible=NULL;
 	switch(type) {
-		case MONSTER : destructible=new MonsterDestructible(0,0,NULL); break;
+		case MONSTER : destructible=new MonsterDestructible(0,0,NULL,0); break;
 		case PLAYER : destructible=new PlayerDestructible(0,0,0,0,NULL); break;
 	}
 	destructible->load(zip);

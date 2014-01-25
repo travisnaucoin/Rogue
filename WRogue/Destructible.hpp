@@ -8,8 +8,9 @@ public :
 	float maxFood;
 	float defense; // hit points deflected
 	const char *corpseName; // the actor's name once dead/destroyed
+	int xp;
 
-	Destructible(float maxHp, float maxMana, float maxFood, float defense, const char *corpseName);
+	Destructible(float maxHp, float maxMana, float maxFood, float defense, const char *corpseName, int xp);
 	~Destructible();
 	float heal(float amount);
 	inline bool isDead() { return hp <= 0; }
@@ -27,7 +28,7 @@ protected :
 
 class MonsterDestructible : public Destructible {
 public :
-	MonsterDestructible(float maxHp, float defense, const char *corpseName);
+	MonsterDestructible(float maxHp, float defense, const char *corpseName, int xp);
 	void die(Actor *owner);
     void save(TCODZip &zip);
 };

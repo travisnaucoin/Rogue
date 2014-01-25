@@ -27,6 +27,8 @@ void Gui::clear(){
 }
 
 void Gui::render() {
+
+
 	// clear the GUI console
 	//TCODRandom *ranCol = TCODRandom::getInstance();
 	if (l == 0.0f & l != 1.0f){
@@ -46,10 +48,11 @@ void Gui::render() {
 	con->printFrame(0,0,BAR_WIDTH,PANEL_HEIGHT,true,TCOD_BKGND_DEFAULT,"Character Information");
 
 	con->hline(1,1,BAR_WIDTH-2,TCOD_BKGND_DEFAULT);
-	con->hline(1,7,BAR_WIDTH-2,TCOD_BKGND_DEFAULT);
+	con->hline(1,9,BAR_WIDTH-2,TCOD_BKGND_DEFAULT);
     con->print(1,2,"Life:");
     con->print(1,4,"Mana:");
     con->print(1,6,"Food:");
+
 
 	// draw the health bar
 	if (engine.player->destructible->hp <= (engine.player->destructible->maxHp/2)){
@@ -85,6 +88,11 @@ void Gui::render() {
 		(TCODColor::green),TCODColor::darkestGreen);
     }
 
+    PlayerAi *ai = (PlayerAi *)engine.player->ai;
+    char xpTxt[128];
+    sprintf(xpTxt,"XP(%d)",ai->xpLevel);
+    renderBar(7,8,BAR_WIDTH-10,"",engine.player->destructible->xp,ai->getNextLevelXp(),TCODColor::lightPurple,TCODColor::darkPurple);
+    con->print(1,8,xpTxt);
 
 	// draw the message log
 	int y=1;

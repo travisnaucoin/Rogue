@@ -378,7 +378,7 @@
 	"main.hpp"
 	<math.h>
 
-1390611942 c:\users\sly\documents\github\rogue\wrogue\main.hpp
+1390627361 c:\users\sly\documents\github\rogue\wrogue\main.hpp
 	"libtcod.hpp"
 	"Persistent.hpp"
 	"Destructible.hpp"
@@ -537,11 +537,11 @@
 
 1390611941 c:\users\sly\documents\github\rogue\wrogue\persistent.hpp
 
-1390611941 c:\users\sly\documents\github\rogue\wrogue\destructible.hpp
+1390620632 c:\users\sly\documents\github\rogue\wrogue\destructible.hpp
 
 1390611941 c:\users\sly\documents\github\rogue\wrogue\attacker.hpp
 
-1390611941 c:\users\sly\documents\github\rogue\wrogue\ai.hpp
+1390619584 c:\users\sly\documents\github\rogue\wrogue\ai.hpp
 
 1390611941 c:\users\sly\documents\github\rogue\wrogue\pickable.hpp
 
@@ -553,9 +553,9 @@
 
 1390611941 c:\users\sly\documents\github\rogue\wrogue\gui.h
 
-1390613310 c:\users\sly\documents\github\rogue\wrogue\engine.hpp
+1390627356 c:\users\sly\documents\github\rogue\wrogue\engine.hpp
 
-1390613040 source:c:\users\sly\documents\github\rogue\wrogue\ai.cpp
+1390620329 source:c:\users\sly\documents\github\rogue\wrogue\ai.cpp
 	<stdio.h>
 	<math.h>
 	"main.hpp"
@@ -567,14 +567,15 @@
 1390611941 source:c:\users\sly\documents\github\rogue\wrogue\container.cpp
 	"main.hpp"
 
-1390611941 source:c:\users\sly\documents\github\rogue\wrogue\destructible.cpp
+1390620760 source:c:\users\sly\documents\github\rogue\wrogue\destructible.cpp
 	<stdio.h>
 	"main.hpp"
 
-1390613326 source:c:\users\sly\documents\github\rogue\wrogue\engine.cpp
+1390626630 source:c:\users\sly\documents\github\rogue\wrogue\engine.cpp
 	"main.hpp"
+	"stdio.h"
 
-1390613310 source:c:\users\sly\documents\github\rogue\wrogue\gui.cpp
+1390621469 source:c:\users\sly\documents\github\rogue\wrogue\gui.cpp
 	<stdio.h>
 	<stdarg.h>
 	"main.hpp"
@@ -584,16 +585,36 @@
 
 1390611941 c:\users\sly\documents\github\rogue\wrogue\lightningbolt.hpp
 
-1390611942 source:c:\users\sly\documents\github\rogue\wrogue\main.cpp
+1390626935 source:c:\users\sly\documents\github\rogue\wrogue\main.cpp
 	"main.hpp"
 
-1390613310 source:c:\users\sly\documents\github\rogue\wrogue\map.cpp
+1390621531 source:c:\users\sly\documents\github\rogue\wrogue\map.cpp
 	"main.hpp"
 	<stdio.h>
 
-1390613310 source:c:\users\sly\documents\github\rogue\wrogue\persistent.cpp
+1390620810 source:c:\users\sly\documents\github\rogue\wrogue\persistent.cpp
 	"main.hpp"
 
 1390611941 source:c:\users\sly\documents\github\rogue\wrogue\pickable.cpp
 	"main.hpp"
+
+1389050762 c:\program files (x86)\fmod soundsystem\fmod studio api windows\api\lowlevel\inc\fmod.h
+	"fmod_common.h"
+
+1389050762 c:\program files (x86)\fmod soundsystem\fmod studio api windows\api\lowlevel\inc\fmod_common.h
+	"fmod_codec.h"
+	"fmod_dsp.h"
+
+1389050762 c:\program files (x86)\fmod soundsystem\fmod studio api windows\api\lowlevel\inc\fmod_codec.h
+
+1389050762 c:\program files (x86)\fmod soundsystem\fmod studio api windows\api\lowlevel\inc\fmod_dsp.h
+
+1390626630 source:c:\users\sly\documents\github\rogue\wrogue\sound.cpp
+
+1390626584 c:\users\sly\documents\github\rogue\wrogue\sound.hpp
+	"fmod.h"
+
+1389050762 c:\program files (x86)\fmod soundsystem\fmod studio api windows\api\lowlevel\inc\fmod.hpp
+	"fmod_common.h"
+	"fmod.h"
 

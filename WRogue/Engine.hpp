@@ -34,5 +34,4 @@ public :
 	void term();
 	void nextLevel();
 };
-
 extern Engine engine;
