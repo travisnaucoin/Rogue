@@ -3,7 +3,7 @@
 
 Actor::Actor(int x, int y, int ch, const char *name,
     const TCODColor &col) :
-    x(x),y(y),ch(ch),col(col),name(name),
+    x(x),y(y),ch(ch),col(col),name(name), fovOnly(true),
     blocks(true),attacker(NULL),destructible(NULL),ai(NULL),pickable(NULL),container(NULL) {
 }
 

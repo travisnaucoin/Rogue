@@ -121,6 +121,7 @@ void PlayerAi::handleActionKey(Actor *owner, int ascii) {
 			engine.gameStatus=Engine::NEW_TURN;
 		}
 		break;
+
 		case 'i' : // display inventory
 		{
 			Actor *actor=choseFromInventory(owner);
@@ -130,6 +131,14 @@ void PlayerAi::handleActionKey(Actor *owner, int ascii) {
 			}
 		}
 		break;
+
+		case 'd' :
+            if ( engine.stairs->x == owner->x && engine.stairs->y == owner->y ) {
+            engine.nextLevel();
+            } else {
+            engine.gui->message(TCODColor::lightGrey,"There are no stairs here.");
+            }
+            break;
 	}
 }
 

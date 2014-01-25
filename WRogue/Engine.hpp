@@ -11,11 +11,14 @@ public :
 	TCOD_mouse_t mouse;
     TCODList<Actor *> actors;
     Actor *player;
+    Actor *stairs;
     Map *map;
     int fovRadius;
     int screenWidth;
     int screenHeight;
     Gui *gui;
+    int level;
+
 
     Engine(int screenWidth, int screenHeight);
     ~Engine();
@@ -29,6 +32,7 @@ public :
 	void save();
 	void init();
 	void term();
+	void nextLevel();
 };
 
 extern Engine engine;

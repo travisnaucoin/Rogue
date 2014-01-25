@@ -374,3 +374,226 @@
 1390549971 source:c:\users\indy\documents\serff\wrogue\persistent.cpp
 	"main.hpp"
 
+1390613310 source:c:\users\sly\documents\github\rogue\wrogue\actor.cpp
+	"main.hpp"
+	<math.h>
+
+1390611942 c:\users\sly\documents\github\rogue\wrogue\main.hpp
+	"libtcod.hpp"
+	"Persistent.hpp"
+	"Destructible.hpp"
+	"Attacker.hpp"
+	"Ai.hpp"
+	"Pickable.hpp"
+	"Container.hpp"
+	"Actor.hpp"
+	"Map.hpp"
+	"Gui.h"
+	"Engine.hpp"
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\libtcod.hpp
+	"libtcod.h"
+	"list.hpp"
+	"color.hpp"
+	"console.hpp"
+	"image.hpp"
+	"sys.hpp"
+	"mersenne.hpp"
+	"mouse.hpp"
+	"bresenham.hpp"
+	"noise.hpp"
+	"fov.hpp"
+	"path.hpp"
+	"lex.hpp"
+	"parser.hpp"
+	"tree.hpp"
+	"bsp.hpp"
+	"heightmap.hpp"
+	"zip.hpp"
+	"namegen.hpp"
+	"txtfield.hpp"
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\libtcod.h
+	<wchar.h>
+	"SDL/SDL.h"
+	"list.h"
+	"color.h"
+	"console.h"
+	"image.h"
+	"mouse.h"
+	"sys.h"
+	"mersenne.h"
+	"bresenham.h"
+	"noise.h"
+	"fov.h"
+	"path.h"
+	"lex.h"
+	"parser.h"
+	"tree.h"
+	"bsp.h"
+	"heightmap.h"
+	"zip.h"
+	"namegen.h"
+	"txtfield.h"
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\list.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\color.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\console.h
+	"console_types.h"
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\console_types.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\image.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\mouse.h
+	"mouse_types.h"
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\mouse_types.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\sys.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\mersenne.h
+	"mersenne_types.h"
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\mersenne_types.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\bresenham.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\noise.h
+	"noise_defaults.h"
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\noise_defaults.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\fov.h
+	"fov_types.h"
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\fov_types.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\path.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\lex.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\parser.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\tree.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\bsp.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\heightmap.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\zip.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\namegen.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\txtfield.h
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\list.hpp
+	<string.h>
+	<stdlib.h>
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\color.hpp
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\console.hpp
+	"console_types.h"
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\image.hpp
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\sys.hpp
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\mersenne.hpp
+	"mersenne_types.h"
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\mouse.hpp
+	"mouse_types.h"
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\bresenham.hpp
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\noise.hpp
+	"noise_defaults.h"
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\fov.hpp
+	"fov_types.h"
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\path.hpp
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\lex.hpp
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\parser.hpp
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\tree.hpp
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\bsp.hpp
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\heightmap.hpp
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\zip.hpp
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\namegen.hpp
+
+1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\txtfield.hpp
+	"color.hpp"
+
+1390611941 c:\users\sly\documents\github\rogue\wrogue\persistent.hpp
+
+1390611941 c:\users\sly\documents\github\rogue\wrogue\destructible.hpp
+
+1390611941 c:\users\sly\documents\github\rogue\wrogue\attacker.hpp
+
+1390611941 c:\users\sly\documents\github\rogue\wrogue\ai.hpp
+
+1390611941 c:\users\sly\documents\github\rogue\wrogue\pickable.hpp
+
+1390611941 c:\users\sly\documents\github\rogue\wrogue\container.hpp
+
+1390613310 c:\users\sly\documents\github\rogue\wrogue\actor.hpp
+
+1390611941 c:\users\sly\documents\github\rogue\wrogue\map.hpp
+
+1390611941 c:\users\sly\documents\github\rogue\wrogue\gui.h
+
+1390613310 c:\users\sly\documents\github\rogue\wrogue\engine.hpp
+
+1390613040 source:c:\users\sly\documents\github\rogue\wrogue\ai.cpp
+	<stdio.h>
+	<math.h>
+	"main.hpp"
+
+1390611941 source:c:\users\sly\documents\github\rogue\wrogue\attacker.cpp
+	<stdio.h>
+	"main.hpp"
+
+1390611941 source:c:\users\sly\documents\github\rogue\wrogue\container.cpp
+	"main.hpp"
+
+1390611941 source:c:\users\sly\documents\github\rogue\wrogue\destructible.cpp
+	<stdio.h>
+	"main.hpp"
+
+1390613326 source:c:\users\sly\documents\github\rogue\wrogue\engine.cpp
+	"main.hpp"
+
+1390613310 source:c:\users\sly\documents\github\rogue\wrogue\gui.cpp
+	<stdio.h>
+	<stdarg.h>
+	"main.hpp"
+
+1390611941 source:c:\users\sly\documents\github\rogue\wrogue\lightningbolt.cpp
+	"LightningBolt.hpp"
+
+1390611941 c:\users\sly\documents\github\rogue\wrogue\lightningbolt.hpp
+
+1390611942 source:c:\users\sly\documents\github\rogue\wrogue\main.cpp
+	"main.hpp"
+
+1390613310 source:c:\users\sly\documents\github\rogue\wrogue\map.cpp
+	"main.hpp"
+	<stdio.h>
+
+1390613310 source:c:\users\sly\documents\github\rogue\wrogue\persistent.cpp
+	"main.hpp"
+
+1390611941 source:c:\users\sly\documents\github\rogue\wrogue\pickable.cpp
+	"main.hpp"
+

@@ -2,7 +2,7 @@
 
 Engine::Engine(int screenWidth, int screenHeight) : gameStatus(STARTUP),
 	player(NULL),map(NULL),fovRadius(10),
-	screenWidth(screenWidth),screenHeight(screenHeight) {
+	screenWidth(screenWidth),screenHeight(screenHeight), level(1) {
     TCODSystem::setFps(70);
     TCODConsole::setCustomFont("terminal2.png",TCOD_FONT_LAYOUT_ASCII_INROW);
 
@@ -18,6 +18,10 @@ void Engine::init() {
     player->ai = new PlayerAi();
     player->container = new Container(26);
     actors.push(player);
+    stairs = new Actor(0,0,'>',"stairs",TCODColor::white);
+    stairs->blocks=false;
+    stairs->fovOnly=false;
+    actors.push(stairs);
     map = new Map(80,43);
     map->init(true);
     gui->message(TCODColor::lightestGreen,
@@ -67,7 +71,8 @@ void Engine::render() {
 	for (Actor **iterator=actors.begin();
 	    iterator != actors.end(); iterator++) {
 		Actor *actor=*iterator;
-		if ( actor != player && map->isInFov(actor->x,actor->y) ) {
+		if ( actor != player && ((!actor->fovOnly && map->isExplored(actor->x,actor->y))
+            || map->isInFov(actor->x,actor->y)) ) {
 	        actor->render();
 	    }
 	}
@@ -156,3 +161,23 @@ bool Engine::pickATile(int *x, int *y, float maxRange, float aoe) {
 	}
 	return false;
 }
+
+void Engine::nextLevel() {
+    level++;
+    gui->message(TCODColor::lightViolet,"You take a moment to rest, and recover your strength.");
+    player->destructible->heal(player->destructible->maxHp/2);
+    gui->message(TCODColor::red,"After a rare moment of peace, you descend\ndeeper into the heart of the dungeon...");
+    delete map;
+    // delete all actors but player and stairs
+    for (Actor **it=actors.begin(); it!=actors.end(); it++) {
+        if ( *it != player && *it != stairs ) {
+            delete *it;
+            it = actors.remove(it);
+        }
+    }
+    // create a new map
+    map = new Map(80,43);
+    map->init(true);
+    gameStatus=STARTUP;
+}
+

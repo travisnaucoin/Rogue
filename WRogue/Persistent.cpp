@@ -269,6 +269,10 @@ void Engine::load() {
 		player=new Actor(0,0,0,NULL,TCODColor::white);
 		actors.push(player);
 		player->load(zip);
+		// the stairs
+        stairs=new Actor(0,0,0,NULL,TCODColor::white);
+        stairs->load(zip);
+        actors.push(stairs);
 		// then all other actors
 		int nbActors=zip.getInt();
 		while ( nbActors > 0 ) {
@@ -294,10 +298,12 @@ void Engine::save() {
 		map->save(zip);
 		// then the player
 		player->save(zip);
+		//stairs
+		stairs->save(zip);
 		// then all the other actors
-		zip.putInt(actors.size()-1);
+		zip.putInt(actors.size()-2);
 		for (Actor **it=actors.begin(); it!=actors.end(); it++) {
-			if ( *it != player ) {
+			if ( *it != player && *it != stairs ) {
 				(*it)->save(zip);
 			}
 		}
