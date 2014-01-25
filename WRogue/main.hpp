@@ -9,5 +9,6 @@ class Actor;
 #include "Actor.hpp"
 #include "Map.hpp"
 #include "Gui.h"
+#include "sound.hpp"
 #include "Engine.hpp"
 

@@ -10,7 +10,11 @@ Engine::Engine(int screenWidth, int screenHeight) : gameStatus(STARTUP),
 }
 
 void Engine::init() {
-
+    //Sound::unload();
+    Sound::load("music/musicMain.mid");
+    Sound::setVolume(0.2f);
+    //Sound::load("effects/menuSelection.mid");
+    Sound::play();
     TCODConsole::initRoot(screenWidth,screenHeight,"0xD153A53",false);
     TCODConsole::root->setDefaultBackground(TCODColor::black);
     player = new Actor(40,25,'@',"player",TCODColor::white);

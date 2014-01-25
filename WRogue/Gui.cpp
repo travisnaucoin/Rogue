@@ -204,6 +204,7 @@ void Gui::message(const TCODColor &col, const char *text, ...) {
 
 Menu::Menu(){
     printf("menu started");
+   // Sound::createMenuSound("effects/menuSelection.mid");
 }
 
 Menu::~Menu() {
@@ -222,6 +223,7 @@ void Menu::addItem(MenuItemCode code, const char *label) {
 }
 
 Menu::MenuItemCode Menu::pick() {
+
     TCODConsole::initRoot(70,50,"0xD153A53",false);
 	static TCODImage img("menuimage1.png");
 	int selectedItem=0;
@@ -244,6 +246,7 @@ Menu::MenuItemCode Menu::pick() {
 		TCODSystem::checkForEvent(TCOD_EVENT_KEY_PRESS,&key,NULL);
 		switch (key.vk) {
 			case TCODK_UP :
+			    //Sound::playOnce();
 				selectedItem--;
 				if (selectedItem < 0) {
 					selectedItem=items.size()-1;
@@ -253,6 +256,7 @@ Menu::MenuItemCode Menu::pick() {
 				selectedItem = (selectedItem + 1) % items.size();
 			break;
 			case TCODK_ENTER :
+
 				return items.get(selectedItem)->code;
 			default : break;
 		}

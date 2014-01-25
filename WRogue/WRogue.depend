@@ -378,7 +378,7 @@
 	"main.hpp"
 	<math.h>
 
-1390627361 c:\users\sly\documents\github\rogue\wrogue\main.hpp
+1390684909 c:\users\sly\documents\github\rogue\wrogue\main.hpp
 	"libtcod.hpp"
 	"Persistent.hpp"
 	"Destructible.hpp"
@@ -389,6 +389,7 @@
 	"Actor.hpp"
 	"Map.hpp"
 	"Gui.h"
+	"sound.hpp"
 	"Engine.hpp"
 
 1364411024 c:\users\sly\desktop\libtcod-1.5.2-gcc47\include\libtcod.hpp
@@ -553,7 +554,7 @@
 
 1390611941 c:\users\sly\documents\github\rogue\wrogue\gui.h
 
-1390627356 c:\users\sly\documents\github\rogue\wrogue\engine.hpp
+1390688560 c:\users\sly\documents\github\rogue\wrogue\engine.hpp
 
 1390620329 source:c:\users\sly\documents\github\rogue\wrogue\ai.cpp
 	<stdio.h>
@@ -571,11 +572,11 @@
 	<stdio.h>
 	"main.hpp"
 
-1390626630 source:c:\users\sly\documents\github\rogue\wrogue\engine.cpp
+1390690029 source:c:\users\sly\documents\github\rogue\wrogue\engine.cpp
 	"main.hpp"
 	"stdio.h"
 
-1390621469 source:c:\users\sly\documents\github\rogue\wrogue\gui.cpp
+1390690906 source:c:\users\sly\documents\github\rogue\wrogue\gui.cpp
 	<stdio.h>
 	<stdarg.h>
 	"main.hpp"
@@ -585,7 +586,7 @@
 
 1390611941 c:\users\sly\documents\github\rogue\wrogue\lightningbolt.hpp
 
-1390626935 source:c:\users\sly\documents\github\rogue\wrogue\main.cpp
+1390689289 source:c:\users\sly\documents\github\rogue\wrogue\main.cpp
 	"main.hpp"
 
 1390621531 source:c:\users\sly\documents\github\rogue\wrogue\map.cpp
@@ -609,9 +610,11 @@
 
 1389050762 c:\program files (x86)\fmod soundsystem\fmod studio api windows\api\lowlevel\inc\fmod_dsp.h
 
-1390626630 source:c:\users\sly\documents\github\rogue\wrogue\sound.cpp
+1390691154 source:c:\users\sly\documents\github\rogue\wrogue\sound.cpp
+	"sound.hpp"
+	<cstddef>
 
-1390626584 c:\users\sly\documents\github\rogue\wrogue\sound.hpp
+1390690834 c:\users\sly\documents\github\rogue\wrogue\sound.hpp
 	"fmod.h"
 
 1389050762 c:\program files (x86)\fmod soundsystem\fmod studio api windows\api\lowlevel\inc\fmod.hpp
