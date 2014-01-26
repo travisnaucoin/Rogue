@@ -1,5 +1,4 @@
 #include "main.hpp"
-#include <stdio.h>
 
 static const int MAX_ROOM_ITEMS = 2;
 static const int ROOM_MAX_SIZE = 12;
@@ -99,9 +98,9 @@ void Map::setMapChar(Tile &t){
     int r = randChar->getInt(1,3);
     //printf("hey %i \n",r);
     switch(r){
-        case 1: t.mapChar = '.'; t.mapCharColor = TCODColor::blue; t.highlightColor = TCODColor::green; t.backColor = TCODColor::green; t.backColorDark = TCODColor::darkestGreen; break;
-        case 2: t.mapChar = ','; t.mapCharColor = TCODColor::darkBlue; t.highlightColor = TCODColor::green; t.backColor = TCODColor::green; t.backColorDark = TCODColor::darkestGreen; break;
-        case 3: t.mapChar = ':'; t.mapCharColor = TCODColor::lightestBlue; t.highlightColor = TCODColor::green; t.backColor = TCODColor::green; t.backColorDark = TCODColor::darkestGreen; break;
+        case 1: t.mapChar = '.'; t.mapCharColor = TCODColor::blue; t.highlightColor = TCODColor::blue; t.backColor= TCODColor(200,180,50) ; t.backColorDark = TCODColor::darkestGrey; break;
+        case 2: t.mapChar = ','; t.mapCharColor = TCODColor::blue; t.highlightColor = TCODColor::blue; t.backColor = TCODColor(200,180,50); t.backColorDark = TCODColor::darkestGrey; break;
+        case 3: t.mapChar = ':'; t.mapCharColor = TCODColor::blue; t.highlightColor = TCODColor::blue; t.backColor = TCODColor(200,180,50); t.backColorDark = TCODColor::darkestGrey; break;
     }
 }
 
@@ -267,7 +266,7 @@ void Map::computeFov() {
 }
 
 void Map::render() const {
-	#define TORCH_RADIUS 10.0f
+	#define TORCH_RADIUS 8.0f
 	#define SQUARED_TORCH_RADIUS (TORCH_RADIUS*TORCH_RADIUS)
 	static const TCODColor darkWall(TCODColor::darkestBlue);
 	static const TCODColor darkGround(TCODColor::darkestGreen);
@@ -285,10 +284,10 @@ void Map::render() const {
 
 
 				// slightly change the perlin noise parameter
-				torchx += 0.2f;
+				torchx += 0.01f;
 				// randomize the light position between -1.5 and 1.5
 				float tdx = torchx + 20.0f;
-				dx = noise->get(&tdx)*1.0f;
+				dx = noise->get(&tdx)*1.5f;
 				tdx += 30.0f;
 				dy = noise->get(&tdx)*1.5f;
 				// randomize the light intensity between -0.2 and 0.2
@@ -313,12 +312,12 @@ void Map::render() const {
 
 
 				TCODConsole::root->setChar(x, y, isWall(x, y) ? tiles[x+y*width].mapChar : tiles[x+y*width].mapChar);
-                (isWall(x,y)) ? TCODConsole::root->setCharForeground(x,y,light) : TCODConsole::root->setCharForeground(x,y,TCODColor::lightGrey);
-                (isWall(x,y)) ? TCODConsole::root->setCharForeground(x,y,light) : TCODConsole::root->setCharBackground(x,y,backLight);
+                (isWall(x,y)) ? TCODConsole::root->setCharForeground(x,y,light) : TCODConsole::root->setCharBackground(x,y,light);
+                (isWall(x,y)) ? TCODConsole::root->setCharForeground(x,y,light) : TCODConsole::root->setCharBackground(x,y,backLight,TCOD_BKGND_OVERLAY);
 			}
 			else if (isExplored(x, y)){
 				TCODConsole::root->setChar(x, y, isWall(x,y) ? tiles[x+y*width].mapChar : tiles[x+y*width].mapChar);
-				TCODConsole::root->setCharForeground(x, y,isWall(x, y) ? darkWall : darkGround);
+				TCODConsole::root->setCharForeground(x, y,isWall(x, y) ? darkWall : TCODColor::black);
 			}
 		}
 	}

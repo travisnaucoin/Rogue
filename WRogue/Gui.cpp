@@ -7,6 +7,9 @@ static const int BAR_WIDTH=30;
 static const int MSG_X=1;
 static const int MSG_HEIGHT=5;
 static const int LOG_HEIGHT = 8;
+static const int PAUSE_MENU_WIDTH = 30;
+static const int PAUSE_MENU_HEIGHT = 15;
+
 float l = 0.0f;
 
 
@@ -113,7 +116,6 @@ void Gui::render() {
 	// blit the GUI console on the root console
 	// dungeon level
     battleLog->setDefaultForeground(TCODColor::white);
-    battleLog->print(3,3,"Dungeon level %d",engine.level);
 	TCODConsole::blit(con,0,0,BAR_WIDTH,engine.screenHeight,TCODConsole::root,engine.screenWidth-BAR_WIDTH,0);
 	TCODConsole::blit(battleLog,0,0,engine.screenWidth-BAR_WIDTH,LOG_HEIGHT,TCODConsole::root,0,engine.screenHeight-LOG_HEIGHT);
 }
@@ -222,7 +224,7 @@ void Menu::addItem(MenuItemCode code, const char *label) {
 	items.push(item);
 }
 
-Menu::MenuItemCode Menu::pick() {
+Menu::MenuItemCode Menu::pick(DisplayMode mode) {
 
     TCODConsole::initRoot(70,50,"0xD153A53",false);
 	static TCODImage img("menuimage1.png");

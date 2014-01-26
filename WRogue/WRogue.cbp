@@ -16,7 +16,7 @@
 					<Add directory="include" />
 				</Compiler>
 				<Linker>
-					<Add library="..\..\..\..\Desktop\libtcod-1.5.2-gcc47\lib\libtcod-mingw-debug.a" />
+					<Add library="..\libtcod-1.5.2-gcc47\lib\libtcod-mingw-debug.a" />
 					<Add library="..\..\..\..\..\..\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\lib\fmod.a" />
 				</Linker>
 			</Target>
@@ -33,7 +33,7 @@
 					<Add option="-s" />
 					<Add option="-static-libgcc" />
 					<Add option="-static-libstdc++" />
-					<Add library="..\..\..\..\Desktop\libtcod-1.5.2-gcc47\lib\libtcod-mingw.a" />
+					<Add library="..\libtcod-1.5.2-gcc47\lib\libtcod-mingw.a" />
 					<Add library="..\..\..\..\..\..\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\lib\fmod.a" />
 				</Linker>
 			</Target>
@@ -41,7 +41,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
-			<Add directory="../../../../Desktop/libtcod-1.5.2-gcc47/include" />
+			<Add directory="../libtcod-1.5.2-gcc47/include" />
 			<Add directory="../../../../../../Program Files (x86)/FMOD SoundSystem/FMOD Studio API Windows/api/lowlevel/inc" />
 		</Compiler>
 		<Unit filename="Actor.cpp" />

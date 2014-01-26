@@ -2,9 +2,9 @@
 #include "stdio.h"
 
 Engine::Engine(int screenWidth, int screenHeight) : gameStatus(STARTUP),
-	player(NULL),map(NULL), fovRadius(10),
+	player(NULL),map(NULL), fovRadius(7),
 	screenWidth(screenWidth),screenHeight(screenHeight), level(1) {
-    TCODSystem::setFps(70);
+    TCODSystem::setFps(30);
     TCODConsole::setCustomFont("terminal2.png",TCOD_FONT_LAYOUT_ASCII_INROW);
     gui = new Gui();
 }
@@ -172,6 +172,9 @@ void Engine::nextLevel() {
     gui->message(TCODColor::lightViolet,"You take a moment to rest, and recover your strength.");
     player->destructible->heal(player->destructible->maxHp/2);
     gui->message(TCODColor::red,"After a rare moment of peace, you descend\ndeeper into the heart of the dungeon...");
+    char levelTxt[128];
+    sprintf(levelTxt,"You are on Level %d", engine.level);
+    gui->message(TCODColor::lightestMagenta,levelTxt);
     delete map;
     // delete all actors but player and stairs
     for (Actor **it=actors.begin(); it!=actors.end(); it++) {
